@@ -26,7 +26,6 @@ This repository takes an image as input and outputs a greyscale "sketch" of the 
   - **Content-Type**: `multipart/form-data`
 
 - **Response**:
-  - **Success (200)**:
     ```json
     {"zip_file_url": "/download/<generated-zip-file-name>.zip"}
 
@@ -36,7 +35,6 @@ This repository is a clone of [https://github.com/Chanuku/semi_ref2sketch_code](
 
 ## How to Run
 
-### 1. Clone the Repository
 ```bash
 git clone <repository-url>
 cd <repository-name>
