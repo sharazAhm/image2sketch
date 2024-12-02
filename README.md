@@ -43,6 +43,5 @@ cd <repository-name>
 
 # Set Up a Python Environment
 Run Docker Container:
-- pip install -r requirements.txt
-- docker build -t img2skch .
-- docker run --gpus all -p 5000:5000 -it img2skch
+- docker build -t img2sketch .
+- docker run --gpus all -p 5000:5000 -it img2sketch
