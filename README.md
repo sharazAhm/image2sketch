@@ -3,7 +3,7 @@
 This repository takes an image as input and outputs a greyscale "sketch" of the image. It provides a web-based HTML endpoint for easy testing.
 
 ## Features
-- Upload an image via the web interface.
+- Upload an image via the web interface or API.
 - Converts the image to a greyscale sketch.
 - Downloads processed images as a ZIP file.
 - Gpu docker container setup

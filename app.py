@@ -122,6 +122,10 @@ def index():
 def download_file(filename):
     return send_from_directory(app.config['RESULT_FOLDER'], filename)
 
+@app.route('/healthcheck', methods=['GET'])
+def health_check():
+    return jsonify({"status": "healthy"}), 200
+
 @app.route('/process', methods=['POST'])
 def process():
     if 'image' not in request.files:
