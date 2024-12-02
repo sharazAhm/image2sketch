@@ -11,7 +11,7 @@ This repository takes an image as input and outputs a greyscale "sketch" of the 
 
 # Architecture
 ![Alt text](assets/1.png)
-![Alt text](assets/2.Flask-endpoint png)
+![Alt text](assets/2.png)
 
 # Flask-endpoint API Endpoints
 
@@ -19,23 +19,16 @@ This repository takes an image as input and outputs a greyscale "sketch" of the 
 - **Description**: Serves the homepage.
 - **Response**: Renders `index.html`.
 
----
-
 ## 2. `/process` (POST)
 - **Description**: Accepts an image file, processes it, and returns a URL to download the resulting `.zip` file.
 - **Request**:
   - **Method**: `POST`
   - **Content-Type**: `multipart/form-data`
-  - **Body**: 
-    - **Key**: `image`
-    - **Value**: An image file (e.g., `.jpg`, `.png`).
 
 - **Response**:
   - **Success (200)**:
     ```json
-    {
-      "zip_file_url": "/download/<generated-zip-file-name>.zip"
-    }
+    {"zip_file_url": "/download/<generated-zip-file-name>.zip"}
 
 ## Source
 This repository is a clone of [https://github.com/Chanuku/semi_ref2sketch_code](https://github.com/Chanuku/semi_ref2sketch_code).
